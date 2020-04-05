@@ -1,0 +1,16 @@
+# This workflow will install Fortran and GNU Autotools dependencies, and do compile test
+
+name: Fortran Program with Meson Build Simple Compiling Test
+description: Test build fortran programs with prepared Meson build file
+branding:
+    icon: 'arrow-left-circle'
+    color: 'yellow'
+inputs:
+    configure-parameters:
+        description: 'parameters for running meson <builddir> command'
+        required: false
+        default: ''
+args: ["I'm not sure what it is"]
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
