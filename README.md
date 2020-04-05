@@ -25,3 +25,7 @@ jobs:
         matrix:
         args:  ${{ matrix.content }}
 ```
+
+
+* TODO:
+    - check arguments for -m32 build, mingw cross-compiling
