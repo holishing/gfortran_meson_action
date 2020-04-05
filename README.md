@@ -19,8 +19,8 @@ jobs:
         content: [""]
     steps:
     - uses: actions/checkout@v2
-    - name: gfortran-autotool compiling test
-      uses: holishing/gfortran_meson_action@2020.308.0
+    - name: gfortran-meson compiling test
+      uses: holishing/gfortran_meson_action@2020.405.1
       with:
         matrix:
         args:  ${{ matrix.content }}
